@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Program printing various sizes
+ * main - A program printing various sizes
  * Return: 0 (Success)
  */
 int main(void)
@@ -12,10 +12,10 @@ int main(void)
 	long long int y;
 	float f;
 
-	printf("The size of a char is: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("The size of an int is: %lu byte(s)\n", (unsigned long)sizeof(i));
-	printf("The size of a long int is: %lu byte(s)\n", (unsigned long)sizeof(l));
-	printf("The size of a long long int is: %lu byte(s)\n", (unsigned long)sizeof(y));
-        printf("The size of a float is: %ly byte(s)\n", (unsigned long)sizeof(f));
-        return (0);
-}	
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(y));
+	printf("Size of a float: %ly byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
+}
