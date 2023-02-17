@@ -6,6 +6,7 @@
  * main - A program that assigns variable n
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 	int n;
