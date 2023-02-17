@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - A program that assigns variable n
- * Return: 0 (Success)
+ * main -Entry point
+ * Description: Positive anything is better than negative nothing
+ * Return: 0
  */
 
 int main(void)
@@ -13,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
+
 	printf("%d ", n);
 	if (n > 0)
 	{
