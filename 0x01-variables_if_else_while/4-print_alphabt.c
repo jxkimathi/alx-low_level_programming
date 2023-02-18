@@ -1,20 +1,24 @@
+
 #include <stdio.h>
 
 /**
- * main - A program that prints the alphabet except q and e
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Description - Alphabeth Soup
+ * Return: 0
  */
+
 int main(void)
 {
-        char c;
+	char c;
 
-        for (c = 'a'; c <= 'z'; c++)
-        {
-                if (c != 'e' && c != 'q')
-                {
-                        putchar(c);
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
