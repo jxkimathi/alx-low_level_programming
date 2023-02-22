@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the times table
- * @n - number to be treated
- *
- * Return: number matrix
+ * print_times_table - Entry point
+ * Description - n Times table
+ * @n: Integer variable
+ * Return: int
  */
+
 void print_times_table(int n)
 {
 	int i, j, ans;
@@ -20,7 +21,7 @@ void print_times_table(int n)
 				if (ans > 99)
 				{
 					_putchar(',');
-					_putchar(' ');
+					_putchar(32);
 					_putchar((ans / 100) + '0');
 					_putchar(((ans / 10) % 10) + '0');
 					_putchar((ans % 10) + '0');
@@ -28,8 +29,8 @@ void print_times_table(int n)
 				else if (ans > 9)
 				{
 					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar(32);
+					_putchar(32);
 					_putchar(((ans / 10) % 10) + '0');
 					_putchar((ans % 10) + '0');
 				}
@@ -38,9 +39,9 @@ void print_times_table(int n)
 					if (j != 0)
 					{
 						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
 					}
 					_putchar(ans + '0');
 				}
