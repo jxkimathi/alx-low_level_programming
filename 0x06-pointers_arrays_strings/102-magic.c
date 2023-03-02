@@ -9,13 +9,15 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 	/*
-	 * not allowed to use a
-	 * not allowed to modify p
-	 * only one statement
-	 * not allowed to code anything else
+	 * write your line of code here...
+	 * remember that you are:
+	 * -not allowed to use a
+	 * -not allowed to modify p
+	 * -allowed only one statement
+	 * -not allowed to code anything else
 	 */
 	*(p + 5) = 98;
-	/* ..prints 98\n*/
+	/* ...so that it prints 98\n*/
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
