@@ -23,14 +23,14 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
-			else if (accept[i] + 1 == '\0')
+			else if (accept[i + 1] == '\0')
 			{
 				return (bytes);
 			}
 		}
-		
+
 		s++;
 	}
-	
+
 	return (bytes);
 }
