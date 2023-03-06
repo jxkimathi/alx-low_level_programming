@@ -10,21 +10,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int index, sum1 = 0, sum2 = 0;
+	int i, j;
 
-	for (index = 0; index < size; index++)
+	for (i = 0; a[i][7]; i++)
 	{
-		sum1 += a[index];
-		a += size;
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
 	}
-
-	a -= size;
-
-	for (index = 0; index < size; index++)
-	{
-		sum2 += a[index];
-		a -= size;
-	}
-
-	printf("%d, %d\n", sum1, sum2);
 }
