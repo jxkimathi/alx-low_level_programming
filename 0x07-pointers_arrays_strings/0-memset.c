@@ -6,7 +6,7 @@
  * @b: constant
  * @n: max bytes to use
  *
- * Reeturn: s
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
