@@ -1,24 +1,21 @@
 #include "main.h"
-
 /**
- * _sqrt - natural square root
- * @c: input number
+ * powop - returns natural square root
+ * @n: input number
+ * @c: iterator
  *
- * Return: if n < 0; return -1
- * if n >= 0; return value
+ * Return: square root or -1
  */
-int _sqrt(int n)
+int powop(int n, int c)
 {
-	int x = _sqrt_recursion(n - 1) + 1;
-
-	if (x * x > n)
-		return (x - 1);
-
-	else if (x * x == n)
-		return (x);
-
-	else
-		return (_sqrt_recursion(n - 1) + 1);
+	if (c % (n / c) == 0)
+	{
+		if (c * (n / c) == n)
+			return (c);
+		else
+			return (-1);
+	}
+	return (0 + powop(n, c + 1));
 }
 
 /**
@@ -40,5 +37,5 @@ int _sqrt_recursion(int n)
 		return (n);
 
 	else
-		return (_sqrt(n));
+		return (powop(n, 2));
 }
