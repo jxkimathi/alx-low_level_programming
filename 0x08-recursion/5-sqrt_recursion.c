@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** _sqrt - natural square root
+/** 
+ * _sqrt - natural square root
  * @c: input number
  *
  * Return: if n < 0; return -1
@@ -35,7 +36,7 @@ int _sqrt_recursion(int n)
 	if (n == 0)
 		return (n);
 
-	if ( n == 1)
+	if (n == 1)
 		return (n);
 
 	else
