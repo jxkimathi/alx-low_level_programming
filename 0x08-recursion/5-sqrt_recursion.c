@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * _sqrt - natural square root
  * @c: input number
  *
