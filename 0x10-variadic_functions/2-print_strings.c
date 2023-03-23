@@ -22,10 +22,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (index = 0; index < n; index++)
 	{
-		str = va_arg(ap, int);
+		str = va_arg(ap, char*);
 
 		if (str == NULL)
-			str = (nil);
+			str = "(nil)";
 
 		printf("%s", str);
 
