@@ -2,7 +2,7 @@
 
 /**
  * print_strings - A function that prints strings, followed by a new line
- * @seperator: The string to be printed between strings
+ * @separator: The string to be printed between strings
  * @n: The number of strings passed by the function
  *
  * Return: nil if string == NULL
