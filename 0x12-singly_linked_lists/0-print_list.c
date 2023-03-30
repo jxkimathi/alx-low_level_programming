@@ -4,7 +4,6 @@
  * print_list - Prints all the elements
  * of a list_t list
  * @h: linked list_t list
- * @nodes: counter variable for size_t
  *
  * Return: nodes
  */
