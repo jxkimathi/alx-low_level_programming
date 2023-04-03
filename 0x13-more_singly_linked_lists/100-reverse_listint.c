@@ -17,15 +17,15 @@ listint_t *reverse_listint(listint_t **head)
 
 	behinda = NULL;
 
-	while (*head->next != NULL)
+	while ((*head)->next != NULL)
 	{
-		heada = *head->next;
-		*head->next = behinda;
+		heada = (*head)->next;
+		(*head)->next = behinda;
 		behinda = *head;
 		*head = heada;
 	}
 
-	*head->next = behinda;
+	(*head)->next = behinda;
 
 	return (*head);
 }
