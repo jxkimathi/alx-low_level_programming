@@ -20,10 +20,10 @@ unsigned int binary_to_uint(const char *b)
 
 	while ((b[len] == '\0') || (b[len] == '\0'))
 	{
-		num <<= 1;
-		num += b[len] - '0';
+		number <<= 1;
+		number += b[len] - '0';
 		len++;
 	}
 
-	return (num);
+	return (number);
 }
