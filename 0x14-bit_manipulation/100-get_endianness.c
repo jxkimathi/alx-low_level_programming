@@ -3,7 +3,7 @@
 /**
  * get_endianness - Function that checks the endianness
  *
- * Return - 0 if big-endian
+ * Return: 0 if big-endian
  * Otherwise return -1
  */
 
