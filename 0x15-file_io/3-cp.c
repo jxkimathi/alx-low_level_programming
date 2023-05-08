@@ -38,7 +38,7 @@ void close_file(int fd)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s/n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d/n", fd);
 		exit(100);
 	}
 }
@@ -53,7 +53,7 @@ void close_file(int fd)
 
 int main(int argc, char *argv[])
 {
-	int frem, to, r, w;
+	int from, to, r, w;
 	char *buffer;
 
 	if (argc != 3)
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
 	buffer = create_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
-	r = read(grom, buffer, 1024);
+	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
