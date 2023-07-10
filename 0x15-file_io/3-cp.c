@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         if (chars == -1)
         file_error(-1, 0, argv);
 
-        wr = write(file_to, buffer, 1024);
+        wr = write(file_to, buffer, chars);
 
         if (wr == -1)
         file_error(0, -1, argv);

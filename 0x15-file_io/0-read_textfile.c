@@ -11,28 +11,30 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    int fptr;
     char *buffer;
-    ssize_t nread, nwrite;
+    ssize_t fd, nread, nwrite;
 
     if (filename == NULL)
     return (0);
 
-    fptr = open(filename, O_RDONLY); // opens the file
-
-    if (fptr == -1) // upon failure of opening the file
-    return (0);
-
-    buffer = malloc(sizeof(char) * letters); // allocates enough memory in the buffer
+    buffer = malloc(sizeof(char) * letters);
 
     if (buffer == NULL)
     return (0);
 
-    nread = read(fptr, buffer, letters); // read the letters in buffer from the file
-    nwrite = write(STDOUT_FILENO, buffer, nread); // write out letters in the stdout
+    fd = open(filename, O_RDONLY);
 
-    close(fptr); // closes the file
-    free(buffer); // frees the buffer
+    nread = read(fd, buffer, letters);
+    nwrite = write(STDOUT_FILENO, buffer, nread);
+
+    if (fd == -1 || nread == -1 || nwrite == -1)
+    {
+        free(buffer);
+        return (0);
+    }
+
+    free(buffer);
+    close(fd);
 
     return (nwrite);
 }
