@@ -4,7 +4,7 @@
  * get_bit - Returns the value of a bit at a given index
  * @n: Number to get the bit from
  * @index: The index, starting from 0
- * 
+ *
  * Return: The value of a bit
  * Otherwise return -1
 */
