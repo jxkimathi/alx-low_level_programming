@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	i = key_index((const unsigned char *)key, ht->size);
 
-	for (j = index; ht->array[j]; j++)
+	for (j = i; ht->array[j]; j++)
 	{
 		if (strcmp(ht->array[j]->key, key) == 0)
 		{
@@ -53,3 +53,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[i] = new;
 
 	return (1);
+}

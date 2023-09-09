@@ -5,7 +5,7 @@
  * ht: Pointer to the hash table
  */
 
-void hash_table_print(const hast_table_t *ht)
+void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *node;
 	unsigned long int i;
