@@ -1,5 +1,5 @@
 # Alx Low Level Programming
-This is the beginning of my coding journey with ALX as we dive into the C progrmming language.
+This is the beginning of my coding journey with ALX as we dive into the C programming language.
 There are numerous projects to hone ones focus and to test the understanding of the topics.
 
 # Projects
@@ -24,3 +24,6 @@ There are numerous projects to hone ones focus and to test the understanding of 
 * [0x13-more_singly_linked_lists](./0x13-more_singly_linked_lists/)
 * [0x14-bit_manipulation](./0x14-bit_manipulation/)
 * [0x15-file_io](./0x15-file_io/)
+* [0x17-doubly_linked_lists](./0x17-doubly_linked_lists/)
+* [0x18-dynamic_libraries](./0x18-dynamic_libraries/)
+* [0x1C-makefiles](./0x1C-makefiles/)
