@@ -27,3 +27,4 @@ There are numerous projects to hone ones focus and to test the understanding of 
 * [0x17-doubly_linked_lists](./0x17-doubly_linked_lists/)
 * [0x18-dynamic_libraries](./0x18-dynamic_libraries/)
 * [0x1C-makefiles](./0x1C-makefiles/)
+* [0x1E-search_algorithms](./0x1E-search_algorithms/)
